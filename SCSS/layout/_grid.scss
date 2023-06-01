@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as v;
+
+.grid {
+    display: grid;
+    max-width: 114rem;
+    margin: 0 auto;
+    padding: 3rem;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+}
