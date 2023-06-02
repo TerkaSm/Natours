@@ -1,0 +1,8 @@
+//media queries
+
+
+@mixin media-min ($pocet) {
+    @media screen and (min-width:$pocet) {
+        @content;
+    }
+}

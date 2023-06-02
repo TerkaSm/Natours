@@ -1,10 +1,14 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
 
 .grid {
-    display: grid;
-    max-width: 114rem;
-    margin: 0 auto;
-    padding: 3rem;
-    gap: 3rem;
-    grid-template-columns: 1fr 1fr;
+
+    @include mx.media-min(700px) {
+        display: grid;
+        max-width: 114rem;
+        margin: 0 auto;
+        padding: 3rem;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+     }
 }
