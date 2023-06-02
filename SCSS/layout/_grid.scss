@@ -2,13 +2,45 @@
 @use '../abstracts/mixins' as mx;
 
 .grid {
+    padding: 3rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
 
     @include mx.media-min(700px) {
         display: grid;
         max-width: 114rem;
-        margin: 0 auto;
-        padding: 3rem;
         gap: 3rem;
         grid-template-columns: 1fr 1fr;
+     }
+}
+
+.row {
+    padding: 3rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+
+    @include mx.media-min(600px) {
+        max-width: 114rem;
+        grid-template-columns: 1fr 1fr;
+     }
+
+     @include mx.media-min(1040px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+
+     &--2 {
+        padding: 3rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+
+        @include mx.media-min(800px) {
+            max-width: 114rem;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
      }
 }
