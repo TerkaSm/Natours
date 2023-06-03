@@ -37,7 +37,11 @@
         grid-template-columns: 1fr;
         gap: 5rem;
 
-        @include mx.media-min(800px) {
+        @include mx.media-min(700px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include mx.media-min(900px) {
             max-width: 114rem;
             grid-template-columns: 1fr 1fr 1fr;
         }
